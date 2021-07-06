@@ -1,4 +1,4 @@
-# LOCO-CAN Hardware
+# LOCO-CAN
 
 The software is managed in the [LOCO-CAN_Software](https://github.com/nibble-arts/LOCO-CAN_Software) repository.
 
