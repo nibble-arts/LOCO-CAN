@@ -9,6 +9,17 @@ Due to the flexibility of the CAN bus, additional modules can easily be connecte
 
 The system is not only intended for networking within a traction vehicle, but can also be routed through the train via a four-pole cable. This means that not only can control consoles be connected at any point in the train, but also, for example, lights in wagons can be operated.
 
+The system is still under developement. The CAN-specification is defined but can be extended. Board designs are available in different versions, due to the process of evolvement. Besides bugs in the board design details like the pinout of the program interface differ between the versions.
+
+## LOCO-CAN System Description
+
+The Modules are connected with 4-pin cables using MICRO MATE-N-LOK connectors. The cables have a supply line with a voltage of +6 up to +30 Volts. The supply can be provided through some modules, that have got supply connectors (vertical 2-pin MICRO MATE-N-LOK connector). The motor module supplies directly from the motor driver.
+
+All supply connectors have a diode, so the input voltages on places in the network can be different. The supply voltage on the bus will be the highest value. The operation voltage for internal function of the modules is created onboard.
+
+So it is possible to connect two locomotives with 12 Volt and 24 Volt batteries without any problem. All connected units have a common GND level. When using the CAN-supply for LED-lights, it is important to have the big voltage range in mind. Best is to use a current regulator for the LEDs.
+
+**It is not recommended to use the CAN-Connector for supply of the bus.**
 # Hardware
 
 ## Wired units
@@ -81,23 +92,6 @@ Jack: MATE-N-LOK 3-794618-2
 | 1   | +6-30 Volt / max. 5 Ampere |
 | 2   | GND                        |
 
-
-
-# LOCO-CAN
-
-The LOCO-CAN-system is designed for the use is miniature railway vehicles. It provides a CAN-bus connecting the different modules inside a locomotive, but also between vehicles in a train.
-
-The system is still under developement. The CAN-specification is defined but can be extended. Board designs are available in different versions, due to the process of evolvement. Besides bugs in the board design details like the pinout of the program interface differ between the versions.
-
-## LOCO-CAN System Description
-
-The Modules are connected with 4-pin cables using MICRO MATE-N-LOK connectors. The cables have a supply line with a voltage of +6 up to +30 Volts. The supply can be provided through some modules, that have got supply connectors (vertical 2-pin MICRO MATE-N-LOK connector). The motor module supplies directly from the motor driver.
-
-All supply connectors have a diode, so the input voltages on places in the network can be different. The supply voltage on the bus will be the highest value. The operation voltage for internal function of the modules is created onboard.
-
-So it is possible to connect two locomotives with 12 Volt and 24 Volt batteries without any problem. All connected units have a common GND level. When using the CAN-supply for LED-lights, it is important to have the big voltage range in mind. Best is to use a current regulator for the LEDs.
-
-**It is not recommended to use the CAN-Connector for supply of the bus.**
 
 ## ICP SDI pads
 To flash the bootloader on Atmega chips latter versions provide three pads to access the SDI port of the MCU. A jumper in the CS line between the MCU and the CAN controller has to be closed after the flash process.
