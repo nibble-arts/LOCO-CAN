@@ -2182,7 +2182,6 @@ design rules under a new name.</description>
 </designrules>
 <autorouter>
 <pass name="Default">
-<param name="RoutingGrid" value="6.25mil"/>
 <param name="AutoGrid" value="0"/>
 <param name="Efforts" value="2"/>
 <param name="TopRouterVariant" value="1"/>
@@ -2798,13 +2797,13 @@ design rules under a new name.</description>
 <wire x1="29.718" y1="17.6784" x2="29.845" y2="17.575" width="0.1524" layer="1"/>
 <wire x1="33.0708" y1="18.8976" x2="33.195" y2="18.765" width="0.1524" layer="1"/>
 <via x="17.3736" y="29.718" extent="1-16" drill="0.35"/>
-<polygon width="0.1524" layer="1">
+<polygon width="0.1524" layer="16">
 <vertex x="0" y="34.29"/>
 <vertex x="43.18" y="34.29"/>
 <vertex x="43.18" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
-<polygon width="0.1524" layer="16">
+<polygon width="0.1524" layer="1">
 <vertex x="0" y="34.29"/>
 <vertex x="43.18" y="34.29"/>
 <vertex x="43.18" y="0"/>
@@ -3316,14 +3315,6 @@ design rules under a new name.</description>
 <wire x1="15.8496" y1="13.1064" x2="15.78" y2="13.1699" width="0.1524" layer="16"/>
 <wire x1="15.24" y1="2.5908" x2="15.24" y2="2.54" width="0.1524" layer="16"/>
 </signal>
-<signal name="D2">
-<contactref element="SPEED" pad="1"/>
-<contactref element="R11" pad="2"/>
-<wire x1="30.0228" y1="27.2796" x2="26.3652" y2="23.622" width="0.1524" layer="1"/>
-<wire x1="30.7848" y1="27.2796" x2="30.0228" y2="27.2796" width="0.1524" layer="1"/>
-<wire x1="26.3652" y1="23.622" x2="26.35" y2="23.495" width="0.1524" layer="1"/>
-<wire x1="30.7848" y1="27.2796" x2="30.885" y2="27.43" width="0.1524" layer="1"/>
-</signal>
 <signal name="+12V">
 <contactref element="CAN-1" pad="4"/>
 <contactref element="CAN-2" pad="4"/>
@@ -3492,6 +3483,26 @@ design rules under a new name.</description>
 <wire x1="11.1252" y1="30.48" x2="9.005" y2="30.48" width="0.1524" layer="1"/>
 <wire x1="11.43" y1="30.1752" x2="11.1252" y2="30.48" width="0.1524" layer="1"/>
 <wire x1="11.43" y1="30.1752" x2="11.43" y2="30.16" width="0.1524" layer="1"/>
+</signal>
+<signal name="PULSE">
+<contactref element="SPEED" pad="1"/>
+<contactref element="R11" pad="2"/>
+<wire x1="30.0228" y1="27.2796" x2="26.8224" y2="24.0792" width="0.1524" layer="1"/>
+<wire x1="26.8224" y1="24.0792" x2="26.3652" y2="23.622" width="0.1524" layer="1"/>
+<wire x1="30.7848" y1="27.2796" x2="30.0228" y2="27.2796" width="0.1524" layer="1"/>
+<wire x1="26.3652" y1="23.622" x2="26.35" y2="23.495" width="0.1524" layer="1"/>
+<wire x1="30.7848" y1="27.2796" x2="30.885" y2="27.43" width="0.1524" layer="1"/>
+<contactref element="IC1" pad="19"/>
+<wire x1="23.4696" y1="18.7452" x2="22.098" y2="18.7452" width="0.1524" layer="16"/>
+<wire x1="23.9268" y1="18.7452" x2="23.4696" y2="18.7452" width="0.1524" layer="1"/>
+<wire x1="27.1272" y1="21.9456" x2="23.9268" y2="18.7452" width="0.1524" layer="1"/>
+<wire x1="27.1272" y1="23.4696" x2="27.1272" y2="21.9456" width="0.1524" layer="16"/>
+<wire x1="27.2796" y1="23.622" x2="27.1272" y2="23.4696" width="0.1524" layer="16"/>
+<wire x1="26.8224" y1="24.0792" x2="27.2796" y2="23.622" width="0.1524" layer="1"/>
+<wire x1="22.098" y1="18.7452" x2="22.0726" y2="18.6625" width="0.1524" layer="16"/>
+<via x="23.4696" y="18.7452" extent="1-16" drill="0.35"/>
+<via x="27.1272" y="21.9456" extent="1-16" drill="0.35"/>
+<via x="27.2796" y="23.622" extent="1-16" drill="0.35"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

@@ -9569,9 +9569,9 @@ common cathode</description>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="PBYR635" device="" package3d_urn="urn:adsk.eagle:package:43387/1"/>
 <part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="PBYR635" device="" package3d_urn="urn:adsk.eagle:package:43387/1"/>
-<part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD323-R" package3d_urn="urn:adsk.eagle:package:43437/1"/>
-<part name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD323-R" package3d_urn="urn:adsk.eagle:package:43437/1"/>
-<part name="D5" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD323-R" package3d_urn="urn:adsk.eagle:package:43437/1"/>
+<part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD323-R" package3d_urn="urn:adsk.eagle:package:43437/1" value="1N4148"/>
+<part name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD323-R" package3d_urn="urn:adsk.eagle:package:43437/1" value="1N4148"/>
+<part name="D5" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD323-R" package3d_urn="urn:adsk.eagle:package:43437/1" value="1N4148"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="MELF0102W" package3d_urn="urn:adsk.eagle:package:23588/2" value="47K"/>
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="MELF0102W" package3d_urn="urn:adsk.eagle:package:23588/2" value="10k"/>
@@ -9587,6 +9587,7 @@ common cathode</description>
 <plain>
 <text x="76.2" y="17.78" size="1.778" layer="97">Freilaufdioden</text>
 <text x="104.14" y="17.78" size="1.778" layer="97">Spannungsmessung</text>
+<text x="-96.52" y="93.98" size="5.08" layer="95">CAN-Motor-Driver V2.0a</text>
 </plain>
 <instances>
 <instance part="R2" gate="G$1" x="33.02" y="55.88" smashed="yes">
@@ -10311,11 +10312,6 @@ common cathode</description>
 </net>
 <net name="VOLT-1" class="0">
 <segment>
-<pinref part="BUS1" gate="1" pin="7"/>
-<wire x1="-88.9" y1="60.96" x2="-73.66" y2="60.96" width="0.1524" layer="91"/>
-<label x="-73.66" y="60.96" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
 <pinref part="D6" gate="G$1" pin="C"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="5.08" x2="114.3" y2="10.16" width="0.1524" layer="91"/>
@@ -10328,13 +10324,13 @@ common cathode</description>
 <junction x="114.3" y="10.16"/>
 <label x="104.14" y="10.16" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="BUS2B" gate="1" pin="1"/>
+<wire x1="-88.9" y1="22.86" x2="-73.66" y2="22.86" width="0.1524" layer="91"/>
+<label x="-73.66" y="22.86" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="VOLT-2" class="0">
-<segment>
-<pinref part="BUS1" gate="1" pin="8"/>
-<wire x1="-88.9" y1="58.42" x2="-73.66" y2="58.42" width="0.1524" layer="91"/>
-<label x="-73.66" y="58.42" size="1.778" layer="95" rot="R180"/>
-</segment>
 <segment>
 <pinref part="D7" gate="G$1" pin="C"/>
 <pinref part="R19" gate="G$1" pin="1"/>
@@ -10348,10 +10344,22 @@ common cathode</description>
 <junction x="114.3" y="-15.24"/>
 <label x="104.14" y="-15.24" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="BUS2B" gate="1" pin="2"/>
+<wire x1="-88.9" y1="20.32" x2="-73.66" y2="20.32" width="0.1524" layer="91"/>
+<label x="-73.66" y="20.32" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="106,1,-88.9,76.2,VCC,,,,,"/>
+<approved hash="106,1,-81.28,81.28,VCC,,,,,"/>
+<approved hash="113,1,-91.4823,64.4804,BUS1,,,,,"/>
+<approved hash="113,1,-91.4823,34.0004,BUS2A,,,,,"/>
+<approved hash="113,1,-91.4823,17.4904,BUS2B,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

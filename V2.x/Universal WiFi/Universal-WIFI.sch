@@ -23020,11 +23020,12 @@ Source: http://cache.national.com/ds/LM/LM340.pdf</description>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="5K"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10K"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="-215.9" y="162.56" size="1.778" layer="95">WIFI-Controller V2.1a</text>
+<text x="-215.9" y="162.56" size="1.778" layer="95">WIFI-Controller V2.1b</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="-27.94" y="121.92" smashed="yes" grouprefs="MCU">
@@ -23199,6 +23200,10 @@ Source: http://cache.national.com/ds/LM/LM340.pdf</description>
 <instance part="GND6" gate="1" x="-208.28" y="109.22" smashed="yes" rot="MR0" grouprefs="CAN-INTERFACE">
 <attribute name="VALUE" x="-205.74" y="106.68" size="1.778" layer="96" rot="MR0"/>
 </instance>
+<instance part="R5" gate="G$1" x="-71.12" y="147.32" smashed="yes" rot="R180">
+<attribute name="NAME" x="-67.31" y="145.8214" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-67.31" y="150.622" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -23366,19 +23371,19 @@ Source: http://cache.national.com/ds/LM/LM340.pdf</description>
 <segment>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <pinref part="U1" gate="G$1" pin="3V3"/>
-<wire x1="-86.36" y1="149.86" x2="-86.36" y2="144.78" width="0.1524" layer="91" grouprefs="MCU"/>
+<wire x1="-86.36" y1="149.86" x2="-86.36" y2="147.32" width="0.1524" layer="91" grouprefs="MCU"/>
+<wire x1="-86.36" y1="147.32" x2="-86.36" y2="144.78" width="0.1524" layer="91" grouprefs="MCU"/>
 <wire x1="-86.36" y1="144.78" x2="-78.74" y2="144.78" width="0.1524" layer="91" grouprefs="MCU"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="-78.74" y1="144.78" x2="-45.72" y2="144.78" width="0.1524" layer="91" grouprefs="MCU"/>
 <wire x1="-86.36" y1="137.16" x2="-86.36" y2="144.78" width="0.1524" layer="91" grouprefs="MCU"/>
 <junction x="-86.36" y="144.78" grouprefs="MCU"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<pinref part="U1" gate="G$1" pin="EN"/>
-<wire x1="-78.74" y1="137.16" x2="-78.74" y2="142.24" width="0.1524" layer="91" grouprefs="MCU"/>
-<wire x1="-78.74" y1="142.24" x2="-45.72" y2="142.24" width="0.1524" layer="91" grouprefs="MCU"/>
-<wire x1="-78.74" y1="142.24" x2="-78.74" y2="144.78" width="0.1524" layer="91"/>
-<junction x="-78.74" y="142.24"/>
+<wire x1="-78.74" y1="137.16" x2="-78.74" y2="144.78" width="0.1524" layer="91" grouprefs="MCU"/>
 <junction x="-78.74" y="144.78"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="-86.36" y1="147.32" x2="-76.2" y2="147.32" width="0.1524" layer="91"/>
+<junction x="-86.36" y="147.32"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="OUT"/>
@@ -23591,11 +23596,6 @@ Source: http://cache.national.com/ds/LM/LM340.pdf</description>
 <label x="5.08" y="114.3" size="1.778" layer="95" rot="R180" grouprefs="MCU"/>
 </segment>
 <segment>
-<pinref part="PROG" gate="G$1" pin="1"/>
-<wire x1="-45.72" y1="53.34" x2="-58.42" y2="53.34" width="0.1524" layer="91" grouprefs="PROGRAM"/>
-<label x="-55.88" y="53.34" size="1.778" layer="95" grouprefs="PROGRAM"/>
-</segment>
-<segment>
 <wire x1="20.32" y1="104.14" x2="35.56" y2="104.14" width="0.1524" layer="91" grouprefs="EXT-BUS"/>
 <label x="22.86" y="104.14" size="1.778" layer="95" grouprefs="EXT-BUS"/>
 <pinref part="BUS2A" gate="G$1" pin="3"/>
@@ -23751,6 +23751,24 @@ Source: http://cache.national.com/ds/LM/LM340.pdf</description>
 <pinref part="DA1" gate="G$1" pin="RXD"/>
 <wire x1="-195.58" y1="127" x2="-177.8" y2="127" width="0.1524" layer="91" grouprefs="CAN-INTERFACE"/>
 <pinref part="R2" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="EN" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="-66.04" y1="147.32" x2="-50.8" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="147.32" x2="-50.8" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="EN"/>
+<wire x1="-50.8" y1="142.24" x2="-45.72" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="147.32" x2="-50.8" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="152.4" x2="-63.5" y2="152.4" width="0.1524" layer="91"/>
+<junction x="-50.8" y="147.32"/>
+<label x="-60.96" y="152.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PROG" gate="G$1" pin="1"/>
+<wire x1="-45.72" y1="53.34" x2="-58.42" y2="53.34" width="0.1524" layer="91" grouprefs="PROGRAM"/>
+<label x="-55.88" y="53.34" size="1.778" layer="95" grouprefs="PROGRAM"/>
 </segment>
 </net>
 </nets>

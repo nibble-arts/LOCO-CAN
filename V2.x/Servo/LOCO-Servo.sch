@@ -24963,17 +24963,6 @@ Sources: Datasheet of the Mate-N-Lock Series form AMP
 <pinref part="SV1" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="D2" class="0">
-<segment>
-<pinref part="SPEED" gate="G$1" pin="1"/>
-<wire x1="0" y1="-91.44" x2="-12.7" y2="-91.44" width="0.1524" layer="91" grouprefs="SPEEDO"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="-12.7" y1="-91.44" x2="-22.86" y2="-91.44" width="0.1524" layer="91" grouprefs="SPEEDO"/>
-<wire x1="-12.7" y1="-88.9" x2="-12.7" y2="-91.44" width="0.1524" layer="91" grouprefs="SPEEDO"/>
-<junction x="-12.7" y="-91.44" grouprefs="SPEEDO"/>
-<label x="-20.32" y="-91.44" size="1.778" layer="95" grouprefs="SPEEDO"/>
-</segment>
-</net>
 <net name="+12V" class="0">
 <segment>
 <pinref part="CAN-2" gate="G$1" pin="4"/>
@@ -25121,6 +25110,22 @@ Sources: Datasheet of the Mate-N-Lock Series form AMP
 <pinref part="CAN" gate="G$1" pin="C"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="7.62" x2="48.26" y2="7.62" width="0.1524" layer="91" grouprefs="MCU"/>
+</segment>
+</net>
+<net name="PULSE" class="0">
+<segment>
+<pinref part="SPEED" gate="G$1" pin="1"/>
+<wire x1="0" y1="-91.44" x2="-12.7" y2="-91.44" width="0.1524" layer="91" grouprefs="SPEEDO"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="-12.7" y1="-91.44" x2="-22.86" y2="-91.44" width="0.1524" layer="91" grouprefs="SPEEDO"/>
+<wire x1="-12.7" y1="-88.9" x2="-12.7" y2="-91.44" width="0.1524" layer="91" grouprefs="SPEEDO"/>
+<junction x="-12.7" y="-91.44" grouprefs="SPEEDO"/>
+<label x="-20.32" y="-91.44" size="1.778" layer="95" grouprefs="SPEEDO"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="ADC6"/>
+<wire x1="55.88" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
+<label x="66.04" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

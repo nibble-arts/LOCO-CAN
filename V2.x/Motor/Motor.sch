@@ -9,6 +9,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -26168,6 +26182,71 @@ Solder type</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="jst-ph">
+<packages>
+<package name="JST-PH2">
+<wire x1="-2.95" y1="-1.7" x2="-0.4" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="-1.7" x2="0.4" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-1.7" x2="2.95" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-2.95" y1="2.8" x2="2.95" y2="2.8" width="0.127" layer="21"/>
+<wire x1="2.95" y1="2.8" x2="2.95" y2="0.6" width="0.127" layer="21"/>
+<wire x1="2.95" y1="0.6" x2="2.95" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="2.95" y1="-0.3" x2="2.95" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-2.95" y1="2.8" x2="-2.95" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-2.95" y1="0.6" x2="-2.95" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-2.95" y1="-0.3" x2="-2.95" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="2.2" x2="2.35" y2="2.2" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="2.2" x2="-2.35" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="0.6" x2="-2.35" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="-0.3" x2="-2.35" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="-1.1" x2="-0.4" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="2.35" y1="2.2" x2="2.35" y2="0.6" width="0.127" layer="21"/>
+<wire x1="2.35" y1="0.6" x2="2.35" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="2.35" y1="-0.3" x2="2.35" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="-2.95" y1="-0.3" x2="-2.35" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-2.95" y1="0.6" x2="-2.35" y2="0.6" width="0.127" layer="21"/>
+<wire x1="2.35" y1="0.6" x2="2.95" y2="0.6" width="0.127" layer="21"/>
+<wire x1="2.35" y1="-0.3" x2="2.95" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-1.1" x2="2.35" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-1.1" x2="0.4" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="-1.1" x2="-0.4" y2="-1.7" width="0.127" layer="21"/>
+<pad name="2" x="-1" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="1" x="1" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<text x="-3" y="3.5001" size="1.27" layer="25">&gt;NAME</text>
+<text x="0.9001" y="-3.4999" size="1.27" layer="21">1</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CON02">
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-7.366" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="7.62" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="7.62" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JST-PH2" prefix="P" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="CON02" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JST-PH2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -26244,6 +26323,15 @@ Solder type</description>
 <part name="SS" library="jump-0r-smd" library_urn="urn:adsk.eagle:library:251" deviceset="0R-JUMP" device="A" package3d_urn="urn:adsk.eagle:package:15385/1"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="RST" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
+<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="MELF0102W" package3d_urn="urn:adsk.eagle:package:23588/2" value="47K"/>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="MELF0102W" package3d_urn="urn:adsk.eagle:package:23588/2" value="10k"/>
+<part name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="ZENER-DIODE" device="SOD80C" package3d_urn="urn:adsk.eagle:package:43405/2" value="5,1V"/>
+<part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="MELF0102W" package3d_urn="urn:adsk.eagle:package:23588/2" value="47K"/>
+<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="MELF0102W" package3d_urn="urn:adsk.eagle:package:23588/2" value="10k"/>
+<part name="D5" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="ZENER-DIODE" device="SOD80C" package3d_urn="urn:adsk.eagle:package:43405/2" value="5,1V"/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P1" library="jst-ph" deviceset="JST-PH2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -26257,7 +26345,7 @@ Solder type</description>
 <text x="154.94" y="-45.72" size="1.778" layer="97" grouprefs="CONTROLER-PORT">FORW-REL</text>
 <text x="154.94" y="-48.26" size="1.778" layer="97" grouprefs="CONTROLER-PORT">REVERS-REL</text>
 <text x="233.68" y="-40.64" size="1.778" layer="97" grouprefs="CONTROLER-PORT">HORN</text>
-<text x="-22.86" y="111.76" size="5.08" layer="95">Motor V2.1b-s</text>
+<text x="-22.86" y="111.76" size="5.08" layer="95">Motor V2.2-s</text>
 </plain>
 <instances>
 <instance part="IC2" gate="G$1" x="132.08" y="25.4" smashed="yes" rot="MR0" grouprefs="CAN-CONTROLER"/>
@@ -26465,6 +26553,40 @@ Solder type</description>
 <attribute name="NAME" x="158.75" y="80.264" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="154.94" y="82.55" size="1.778" layer="97" rot="R90"/>
 </instance>
+<instance part="R8" gate="G$1" x="119.38" y="-81.28" smashed="yes" grouprefs="SPANNUNGSMESSUNG">
+<attribute name="NAME" x="115.57" y="-79.7814" size="1.778" layer="95"/>
+<attribute name="VALUE" x="120.015" y="-79.502" size="1.778" layer="96"/>
+</instance>
+<instance part="R9" gate="G$1" x="109.22" y="-88.9" smashed="yes" rot="R90" grouprefs="SPANNUNGSMESSUNG">
+<attribute name="NAME" x="107.7214" y="-92.71" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="107.442" y="-88.265" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="D4" gate="G$1" x="101.6" y="-88.9" smashed="yes" rot="R90" grouprefs="SPANNUNGSMESSUNG">
+<attribute name="NAME" x="99.695" y="-90.678" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="105.029" y="-90.678" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND6" gate="1" x="109.22" y="-101.6" smashed="yes" grouprefs="SPANNUNGSMESSUNG">
+<attribute name="VALUE" x="106.68" y="-104.14" size="1.778" layer="96"/>
+</instance>
+<instance part="R10" gate="G$1" x="119.38" y="-106.68" smashed="yes" grouprefs="SPANNUNGSMESSUNG">
+<attribute name="NAME" x="115.57" y="-105.1814" size="1.778" layer="95"/>
+<attribute name="VALUE" x="120.015" y="-104.902" size="1.778" layer="96"/>
+</instance>
+<instance part="R11" gate="G$1" x="109.22" y="-114.3" smashed="yes" rot="R90" grouprefs="SPANNUNGSMESSUNG">
+<attribute name="NAME" x="107.7214" y="-118.11" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="107.442" y="-113.665" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="D5" gate="G$1" x="101.6" y="-114.3" smashed="yes" rot="R90" grouprefs="SPANNUNGSMESSUNG">
+<attribute name="NAME" x="99.695" y="-116.078" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="105.029" y="-116.078" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND7" gate="1" x="109.22" y="-127" smashed="yes" grouprefs="SPANNUNGSMESSUNG">
+<attribute name="VALUE" x="106.68" y="-129.54" size="1.778" layer="96"/>
+</instance>
+<instance part="P1" gate="G$1" x="139.7" y="-93.98" smashed="yes" rot="MR0" grouprefs="SPANNUNGSMESSUNG">
+<attribute name="NAME" x="142.24" y="-90.678" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="142.24" y="-101.346" size="1.778" layer="96" rot="MR0"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -26604,6 +26726,26 @@ Solder type</description>
 <wire x1="109.22" y1="-71.12" x2="109.22" y2="-73.66" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
 <junction x="109.22" y="-71.12" grouprefs="SPANNUNGSMESSUNG"/>
 <pinref part="GND10" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="-93.98" x2="109.22" y2="-96.52" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<pinref part="D4" gate="G$1" pin="A"/>
+<wire x1="109.22" y1="-96.52" x2="101.6" y2="-96.52" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<wire x1="101.6" y1="-96.52" x2="101.6" y2="-91.44" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<wire x1="109.22" y1="-96.52" x2="109.22" y2="-99.06" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<junction x="109.22" y="-96.52" grouprefs="SPANNUNGSMESSUNG"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="-119.38" x2="109.22" y2="-121.92" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<pinref part="D5" gate="G$1" pin="A"/>
+<wire x1="109.22" y1="-121.92" x2="101.6" y2="-121.92" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<wire x1="101.6" y1="-121.92" x2="101.6" y2="-116.84" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<wire x1="109.22" y1="-121.92" x2="109.22" y2="-124.46" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<junction x="109.22" y="-121.92" grouprefs="SPANNUNGSMESSUNG"/>
+<pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -27061,18 +27203,6 @@ Solder type</description>
 <wire x1="58.42" y1="-58.42" x2="60.96" y2="-58.42" width="0.1524" layer="91" grouprefs="POWER"/>
 </segment>
 </net>
-<net name="MOTOR-" class="0">
-<segment>
-<pinref part="DRIVER" gate="G$1" pin="8"/>
-<wire x1="210.82" y1="-45.72" x2="233.68" y2="-45.72" width="0.1524" layer="91" grouprefs="CONTROLER-PORT"/>
-<label x="220.98" y="-45.72" size="1.778" layer="95" grouprefs="CONTROLER-PORT"/>
-</segment>
-<segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="-55.88" x2="129.54" y2="-55.88" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
-<label x="129.54" y="-58.42" size="1.778" layer="95" grouprefs="SPANNUNGSMESSUNG"/>
-</segment>
-</net>
 <net name="MOTOR+" class="0">
 <segment>
 <pinref part="DRIVER" gate="G$1" pin="6"/>
@@ -27118,6 +27248,78 @@ Solder type</description>
 <pinref part="IC1" gate="G$1" pin="PD5(T1)"/>
 <wire x1="63.5" y1="7.62" x2="63.5" y2="38.1" width="0.1524" layer="91" grouprefs="MCU"/>
 <wire x1="63.5" y1="38.1" x2="58.42" y2="38.1" width="0.1524" layer="91" grouprefs="MCU"/>
+</segment>
+</net>
+<net name="A2" class="0">
+<segment>
+<pinref part="D4" gate="G$1" pin="C"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="101.6" y1="-86.36" x2="101.6" y2="-81.28" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<wire x1="101.6" y1="-81.28" x2="109.22" y2="-81.28" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="-81.28" x2="114.3" y2="-81.28" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<wire x1="109.22" y1="-83.82" x2="109.22" y2="-81.28" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<junction x="109.22" y="-81.28" grouprefs="SPANNUNGSMESSUNG"/>
+<wire x1="101.6" y1="-81.28" x2="88.9" y2="-81.28" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<junction x="101.6" y="-81.28" grouprefs="SPANNUNGSMESSUNG"/>
+<label x="91.44" y="-81.28" size="1.778" layer="95" grouprefs="SPANNUNGSMESSUNG"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PC2(ADC2)"/>
+<wire x1="58.42" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
+<label x="68.58" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="A3" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PC3(ADC3)"/>
+<wire x1="58.42" y1="66.04" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
+<label x="68.58" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D5" gate="G$1" pin="C"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="101.6" y1="-111.76" x2="101.6" y2="-106.68" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<wire x1="101.6" y1="-106.68" x2="109.22" y2="-106.68" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="-106.68" x2="114.3" y2="-106.68" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<wire x1="109.22" y1="-109.22" x2="109.22" y2="-106.68" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<junction x="109.22" y="-106.68" grouprefs="SPANNUNGSMESSUNG"/>
+<wire x1="101.6" y1="-106.68" x2="88.9" y2="-106.68" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<junction x="101.6" y="-106.68" grouprefs="SPANNUNGSMESSUNG"/>
+<label x="91.44" y="-106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BATT-2" class="0">
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="127" y1="-106.68" x2="124.46" y2="-106.68" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<label x="129.54" y="-106.68" size="1.778" layer="95" grouprefs="SPANNUNGSMESSUNG"/>
+<pinref part="P1" gate="G$1" pin="2"/>
+<wire x1="127" y1="-106.68" x2="127" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="127" y1="-96.52" x2="132.08" y2="-96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MOTOR-" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="-55.88" x2="129.54" y2="-55.88" width="0.1524" layer="91" grouprefs="SPANNUNGSMESSUNG"/>
+<label x="129.54" y="-58.42" size="1.778" layer="95" grouprefs="SPANNUNGSMESSUNG"/>
+</segment>
+<segment>
+<pinref part="DRIVER" gate="G$1" pin="8"/>
+<wire x1="210.82" y1="-45.72" x2="233.68" y2="-45.72" width="0.1524" layer="91" grouprefs="CONTROLER-PORT"/>
+<label x="220.98" y="-45.72" size="1.778" layer="95" grouprefs="CONTROLER-PORT"/>
+</segment>
+</net>
+<net name="BATT-1" class="0">
+<segment>
+<wire x1="127" y1="-81.28" x2="127" y2="-93.98" width="0.1524" layer="91"/>
+<pinref part="P1" gate="G$1" pin="1"/>
+<wire x1="127" y1="-93.98" x2="132.08" y2="-93.98" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="-81.28" x2="127" y2="-81.28" width="0.1524" layer="91"/>
+<label x="129.54" y="-83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
