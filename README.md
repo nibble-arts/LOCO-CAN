@@ -1,4 +1,7 @@
 # LOCO-CAN
+
+**This Loco-CAN repository is no longer supported, it [moved to a new space](https://loco-can.github.io).**
+
 The software is managed in the [LOCO-CAN_Software](https://github.com/nibble-arts/LOCO-CAN_Software) repository.
 
 The LOCO-CAN project is an electronic control system for the large passenger-carrying garden railway. The communication is based on the CAN bus, which is used in the automotive industry and in automation. The serial signal transmission is very robust and supports multiple masters and multiple slaves.
